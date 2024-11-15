@@ -10,9 +10,16 @@ do{
 
   if(!int.TryParse(value, out userGuessNumber))
   {
-    Console.WriteLine("Enter a number")
+    Console.WriteLine("Enter a number");
   }
 
+  if (userGuessNumber > rndNumber)
+  {
+    Console.WriteLine("Number is higher");
+  }
+    else{
+        Console.WriteLine("Number is lower");
+    }
 
 }
 while(userGuessNumber != rndNumber);
