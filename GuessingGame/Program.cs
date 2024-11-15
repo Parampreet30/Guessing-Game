@@ -4,9 +4,14 @@ int userGuessNumber;
 List<Guess> guessList = new List<Guess>();
 
 do{
-    
+
   Console.WriteLine("Enter a Number");
   string value = Console.ReadLine();
+
+  if(!int.TryParse(value, out userGuessNumber))
+  {
+    Console.WriteLine("Enter a number")
+  }
 
 
 }
