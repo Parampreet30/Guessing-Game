@@ -4,6 +4,10 @@ int userGuessNumber;
 List<Guess> guessList = new List<Guess>();
 
 do{
+    
+  Console.WriteLine("Enter a Number");
+  string value = Console.ReadLine();
+
 
 }
 while(userGuessNumber != rndNumber);
