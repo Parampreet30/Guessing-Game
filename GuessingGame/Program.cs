@@ -26,8 +26,10 @@ do{
     if (previousguess != -1)
     {
         int turnsAgo = guessList.Count - previousguess;
-        Console.WriteLine($"You guessed this number X turns ago!");
+        Console.WriteLine($"You guessed this number {turnsAgo} turns ago!");
     }
 
 }
 while(userGuessNumber != rndNumber);
+
+Console.WriteLine($"You Won! The answer was {userGuessNumber}.")
