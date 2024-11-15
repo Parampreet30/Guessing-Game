@@ -21,5 +21,13 @@ do{
         Console.WriteLine("Number is lower");
     }
 
+
+    int previousguess = guessList.FindIndex(p => p.UserGuess == userGuessNumber);
+    if (previousguess != -1)
+    {
+        int turnsAgo = guessList.Count - previousguess;
+        Console.WriteLine($"You guessed this number X turns ago!");
+    }
+
 }
 while(userGuessNumber != rndNumber);
