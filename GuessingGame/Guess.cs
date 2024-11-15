@@ -6,4 +6,7 @@ public class Guess{
         UserGuess = userGuess;
         GuessTime = DateTime.Now;
     }
+
+
+    
 }
