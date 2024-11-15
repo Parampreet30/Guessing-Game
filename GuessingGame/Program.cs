@@ -11,6 +11,7 @@ do{
   if(!int.TryParse(value, out userGuessNumber))
   {
     Console.WriteLine("Enter a number");
+    continue;
   }
 
   if (userGuessNumber > rndNumber)
@@ -32,4 +33,4 @@ do{
 }
 while(userGuessNumber != rndNumber);
 
-Console.WriteLine($"You Won! The answer was {userGuessNumber}.")
+Console.WriteLine($"You Won! The answer was {userGuessNumber}.");
